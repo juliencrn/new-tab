@@ -1,13 +1,63 @@
+:root {
+  /* Colors from Aura theme */
+  --black: #15141b;
+  --white: #edecee;
+  --gray: #6d6d6d;
+  --purple: #a277ff;
+  --purple-fading: #3d375e7f;
+  --green: #61ffca;
+  --orange: #ffca85;
+  --pink: #f694ff;
+  --blue: #82e2ff;
+  --red: 	#ff6767;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+pre, code {
+  font-family: 'Fira Code', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.text-comment {
+  color: var(--gray);
+}
+
+.text-purple {
+  color: var(--purple);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.App {
+  position: relative;
+  background-color: var(--black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--white);
+}
+
+.Time {
+  position: absolute;
+  top: 0em;
+  right: 1em;
+  font-weight: 400;
+  font-size: calc(24px + 6vmin);
 }

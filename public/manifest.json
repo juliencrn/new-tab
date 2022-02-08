@@ -1,20 +1,17 @@
 {
-  "name": "Chrome new tab Extension",
+  "name": "new-tab",
   "description": "Yet another tab chrome extension",
   "version": "1.0",
   "manifest_version": 3,
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "permissions": [
-    "storage"
-  ],
   "action": {
     "default_icon": {
-      "16": "logo192.png",
-      "32": "logo192.png",
-      "48": "logo192.png",
-      "128": "logo192.png"
+      "16": "favicon-32x32.png",
+      "32": "favicon-32x32.png",
+      "48": "favicon-192x192.png",
+      "128": "favicon-192x192.png"
     }
   }
 }
